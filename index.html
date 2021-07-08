@@ -59,7 +59,7 @@
       <!-- Hero block -->
       <section class="hero">
         <h1 class="main-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="modal-btn" type="button">Заказать услугу</button>
+        <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- Advantages section -->
@@ -121,31 +121,40 @@
           <h2 class="duties-title">Чем мы занимаемся</h2>
           <ul class="duties-list list">
             <li class="duties-item">
-              <img
-                class="duties-image"
-                src="./img/what-we-do/img11.jpg"
-                alt="разработчик пишет код"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="duties-image"
+                  src="./img/what-we-do/img11.jpg"
+                  alt="разработчик пишет код"
+                  width="370"
+                  height="294"
+                />
+                <p class="thumb-description">Десктопные приложения</p>
+              </div>
             </li>
             <li class="duties-item">
-              <img
-                class="duties-image"
-                src="./img/what-we-do/img22.jpg"
-                alt="дизайн макета сайта на мобильном устройстве"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="duties-image"
+                  src="./img/what-we-do/img22.jpg"
+                  alt="дизайн макета сайта на мобильном устройстве"
+                  width="370"
+                  height="294"
+                />
+                <p class="thumb-description">Мобильные приложения</p>
+              </div>
             </li>
             <li class="duties-item">
-              <img
-                class="duties-image"
-                src="./img/what-we-do/img33.jpg"
-                alt="селекция цветов"
-                width="370"
-                height="294"
-              />
+              <div class="thumb">
+                <img
+                  class="duties-image"
+                  src="./img/what-we-do/img33.jpg"
+                  alt="селекция цветов"
+                  width="370"
+                  height="294"
+                />
+                <p class="thumb-description">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -474,5 +483,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-button-img">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
